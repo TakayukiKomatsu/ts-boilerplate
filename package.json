@@ -15,7 +15,7 @@
     "test:noWatch": "vitest --passWithNoTests --config ./vite.config.ts run",
     "test:coverage": "vitest --passWithNoTests --config ./vite.config.ts run --coverage",
     "test:changed": "vitest --passWithNoTests --config ./vite.config.ts --changed",
-    "test:related": "vitest --passWithNoTests --config ./vite.config.ts related",
+    "test:related": "vitest --passWithNoTests --config ./vite.config.ts run related",
     "prepare": "husky install"
   },
   "keywords": [
