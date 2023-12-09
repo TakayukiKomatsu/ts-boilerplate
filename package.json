@@ -1,40 +1,40 @@
 {
-  "name": "boilerplate",
-  "version": "1.0.0",
-  "type": "module",
-  "private": true,
-  "description": "Boilerplate for NodeJs with Typescript, Eslint. Prettier, Husky, Lint-staged and Vitest",
-  "main": "index.js",
-  "scripts": {
-    "dev": "tsx watch --no-cache src/index.ts",
-    "clear": "rimraf dist",
-    "build": "npm run clear && tsc -p tsconfig-build.json",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
-  },
-  "keywords": [
-    "boilerplate",
-    "nodejs",
-    "typescript",
-    "eslint",
-    "prettier",
-    "husky",
-    "vitest"
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Takayuki Komatsu",
-    "email": "komatsutakayuki235@live.com"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "dependencies": {
-    "rimraf": "^5.0.5"
-  },
-  "devDependencies": {
-    "@types/node": "^20.10.4",
-    "tsx": "^4.6.2",
-    "typescript": "^5.3.3"
-  }
+    "name": "boilerplate",
+    "version": "1.0.0",
+    "type": "module",
+    "private": true,
+    "description": "Boilerplate for NodeJs with Typescript, Eslint. Prettier, Husky, Lint-staged and Vitest",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx watch --no-cache src/index.ts",
+        "clear": "rimraf dist",
+        "build": "npm run clear && tsc -p tsconfig-build.json",
+        "lint": "eslint .",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "keywords": [
+        "boilerplate",
+        "nodejs",
+        "typescript",
+        "eslint",
+        "prettier",
+        "husky",
+        "vitest"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Takayuki Komatsu",
+        "email": "komatsutakayuki235@live.com"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "rimraf": "^5.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.4",
+        "tsx": "^4.6.2",
+        "typescript": "^5.3.3"
+    }
 }
