@@ -12,8 +12,10 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "vitest --config ./vite.config.ts",
+    "test:noWatch": "vitest --config ./vite.config.ts run",
     "test:coverage": "vitest --config ./vite.config.ts run --coverage",
-    "test:changed": "vitest --config ./vite.config.ts --changed"
+    "test:changed": "vitest --config ./vite.config.ts --changed",
+    "prepare": "husky install"
   },
   "keywords": [
     "boilerplate",
@@ -44,6 +46,8 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "tsx": "^4.6.2",
     "typescript": "^5.3.3",
     "vite-tsconfig-paths": "^4.2.2",
