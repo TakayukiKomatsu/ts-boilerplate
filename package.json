@@ -10,7 +10,10 @@
     "clear": "rimraf dist",
     "build": "npm run clear && tsc -p tsconfig-build.json",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest --config ./vite.config.ts",
+    "test:coverage": "vitest --config ./vite.config.ts run --coverage",
+    "test:changed": "vitest --config ./vite.config.ts --changed"
   },
   "keywords": [
     "boilerplate",
@@ -35,12 +38,15 @@
   "devDependencies": {
     "@types/node": "^20.10.4",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@vitest/coverage-v8": "^1.0.4",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^42.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-promise": "^6.0.0",
     "tsx": "^4.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite-tsconfig-paths": "^4.2.2",
+    "vitest": "^1.0.4"
   }
 }
