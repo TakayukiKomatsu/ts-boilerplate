@@ -9,7 +9,7 @@
     "dev": "tsx watch --no-cache src/index.ts",
     "clear": "rimraf dist",
     "build": "npm run clear && tsc -p tsconfig-build.json",
-    "lint": "eslint .",
+    "lint": "eslint **/*.ts --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "test": "vitest --config ./vite.config.ts",
     "test:noWatch": "vitest --config ./vite.config.ts run",
