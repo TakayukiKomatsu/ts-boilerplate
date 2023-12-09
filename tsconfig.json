@@ -2,19 +2,19 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDirs": ["src", "tests"],
-    "target": "ES2022",
+    "target": "ESNext",
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "moduleResolution": "NodeNext",
-    "module": "commonjs",
+    "moduleResolution": "Node16",
+    "module": "Node16",
     "esModuleInterop": true,
     "baseUrl": "src",
     "strict": true,
     "paths": {
       "@/*": ["*"],
       "@tests/*": ["../tests/*"]
-    },
-    "include": ["src", "tests"]
-  }
+    }
+  },
+  "include": ["src", "tests"]
 }
