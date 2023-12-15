@@ -11,11 +11,11 @@
     "build": "npm run clear && tsc -p tsconfig-build.json",
     "lint": "eslint **/*.ts --ext .ts",
     "lint:fix": "npm run lint -- --fix",
-    "test": "vitest --passWithNoTests --config ./vite.config.ts ",
-    "test:noWatch": "vitest --passWithNoTests --config ./vite.config.ts run",
-    "test:coverage": "vitest --passWithNoTests --config ./vite.config.ts run --coverage",
-    "test:changed": "vitest --passWithNoTests --config ./vite.config.ts --changed",
-    "test:related": "vitest --passWithNoTests --config ./vite.config.ts run related",
+    "test": "vitest --config ./vitest.config.ts",
+    "test:noWatch": "npm run test -- run",
+    "test:coverage": "npm run test -- run --coverage",
+    "test:changed": "npm run test -- --changed",
+    "test:related": "npm run test -- run related",
     "prepare": "husky install"
   },
   "keywords": [
