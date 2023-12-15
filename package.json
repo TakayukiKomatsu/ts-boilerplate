@@ -11,7 +11,7 @@
     "build": "npm run clear && tsc -p tsconfig-build.json",
     "lint": "eslint **/*.ts --ext .ts",
     "lint:fix": "npm run lint -- --fix",
-    "test": "vitest --config ./vitest.config.ts",
+    "test": "vitest --config ./vite.config.ts",
     "test:noWatch": "npm run test -- run",
     "test:coverage": "npm run test -- run --coverage",
     "test:changed": "npm run test -- --changed",
